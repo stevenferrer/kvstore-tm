@@ -21,14 +21,18 @@ import (
 	"github.com/stevenferrer/kvstore"
 )
 
-var configFile string
+var (
+	configFile string
+	dbPath     string
+)
 
 func init() {
 	flag.StringVar(&configFile, "config", "$HOME/.tendermint/config/config.toml", "Path to config.toml")
+	flag.StringVar(&dbPath, "db-path", "/tmp/badger", "DB file path")
 }
 
 func main() {
-	db, err := badger.Open(badger.DefaultOptions("/tmp/badger"))
+	db, err := badger.Open(badger.DefaultOptions(dbPath))
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "failed to open badger db: %v", err)
 		os.Exit(1)
