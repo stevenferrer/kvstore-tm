@@ -1,4 +1,4 @@
-# kvstore
+# kvstore-tm
 
 An example app built with [Tendermint](https://tendermint.com/). Please refer to below tutorials for more details.
 
