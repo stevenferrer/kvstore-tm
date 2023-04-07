@@ -12,7 +12,7 @@ import (
 	abciserver "github.com/tendermint/tendermint/abci/server"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/stevenferrer/kvstore"
+	"github.com/stevenferrer/kvstore-tm"
 )
 
 var (

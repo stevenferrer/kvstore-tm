@@ -1,4 +1,4 @@
-module github.com/stevenferrer/kvstore
+module github.com/stevenferrer/kvstore-tm
 
 go 1.18
 

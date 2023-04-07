@@ -18,7 +18,7 @@ import (
 	tmservice "github.com/tendermint/tendermint/libs/service"
 	tmnode "github.com/tendermint/tendermint/node"
 
-	"github.com/stevenferrer/kvstore"
+	"github.com/stevenferrer/kvstore-tm"
 )
 
 var (
